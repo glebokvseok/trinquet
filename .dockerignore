@@ -1,0 +1,22 @@
+# General
+**/.idea/
+**/.DS_Store/
+
+# Meta files
+**/LICENSE
+**/README.md
+
+# Git
+**/.git/
+**/.gitignore
+
+# Docker
+**/.dockerignore
+**/docker-compose*
+**/Dockerfile*
+
+# Env files
+**/.env
+
+# Go workspace files
+**/go.work*

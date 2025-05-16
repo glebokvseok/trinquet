@@ -1,0 +1,11 @@
+logging:
+  log_level: "info"
+auth:
+  jwt:
+    user_access_token_lifetime: "2h"
+    user_refresh_token_lifetime: "720h"
+psql:
+  max_open_connections: 10
+  max_idle_connections: 5
+  max_connection_lifetime: "1h"
+  max_connection_idle_time: "10m"

@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package trinquet.services.player.api;
+
+option go_package = "services/player/pkg/api";
+
+service PlayerService {
+    rpc GetAllFollowers(GetAllFollowersRequest) returns (GetAllFollowersResponse);
+
+    rpc GetPlayerPreviews(GetPlayerPreviewsRequest) returns (GetPlayerPreviewsResponse);
+}
+
+message GetAllFollowersRequest {
+    string user_id = 1;
+}
+
+message GetAllFollowersResponse {
+    repeated string followers = 1;
+}
+
+message GetPlayerPreviewsRequest {
+    repeated string player_ids = 1;
+}
+
+message GetPlayerPreviewsResponse {
+    repeated PlayerPreview previews = 1;
+}
+
+message PlayerPreview {
+    string player_id = 1;
+    string name = 2;
+    string surname = 3;
+    optional Avatar avatar = 4;
+}
+
+message Avatar {
+    string id = 1;
+    string mime_type = 2;
+    string url = 3;
+    string method = 4;
+}

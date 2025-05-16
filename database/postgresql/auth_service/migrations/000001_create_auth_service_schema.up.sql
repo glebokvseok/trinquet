@@ -1,0 +1,3 @@
+CREATE SCHEMA IF NOT EXISTS auth_service;
+GRANT USAGE ON SCHEMA auth_service to "service-user";
+ALTER DEFAULT PRIVILEGES IN SCHEMA auth_service GRANT SELECT, UPDATE, INSERT, DELETE ON TABLES to "service-user";

@@ -1,0 +1,3 @@
+REVOKE USAGE ON SCHEMA notification_service FROM "service-user";
+ALTER DEFAULT PRIVILEGES IN SCHEMA notification_service REVOKE SELECT, UPDATE, INSERT, DELETE ON TABLES FROM "service-user";
+--DROP SCHEMA IF EXISTS court_service CASCADE;

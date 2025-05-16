@@ -1,0 +1,10 @@
+logging:
+  log_level: "debug"
+psql:
+  max_open_connections: 10
+  max_idle_connections: 5
+  max_connection_lifetime: "1h"
+  max_connection_idle_time: "10m"
+message_event:
+  topic: "message-events"
+  consumer_group: "chat-service"

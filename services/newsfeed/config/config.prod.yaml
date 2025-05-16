@@ -1,0 +1,16 @@
+logging:
+  log_level: "info"
+mongo:
+  database: "newsfeed-service"
+  request_timeout: "5s"
+  max_connection_pool_size: 10
+  max_connection_idle_time: "10m"
+newsfeed_event:
+  topic: "newsfeed-events"
+  consumer_group: "newsfeed-service"
+player_service:
+  request_timeout: "5s"
+s3:
+  bucket: "newsfeed-public"
+  download_link_ttl: "15m"
+  upload_link_ttl: "15m"

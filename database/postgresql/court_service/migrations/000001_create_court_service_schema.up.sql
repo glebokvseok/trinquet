@@ -1,0 +1,3 @@
+CREATE SCHEMA IF NOT EXISTS court_service;
+GRANT USAGE ON SCHEMA court_service to "service-user";
+ALTER DEFAULT PRIVILEGES IN SCHEMA court_service GRANT SELECT, UPDATE, INSERT, DELETE ON TABLES to "service-user";

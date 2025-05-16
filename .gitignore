@@ -1,0 +1,31 @@
+# General
+.DS_Store
+.idea
+
+# Env files
+.env
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Generated files
+*.generated.yaml
+
+# Generated files directory
+generated/
+
+# Local config files
+*.dev.yaml
+
+# Local certs directory
+certs/
+
+# Local docker-compose file
+docker-compose.dev.yaml
+
+# Local docker containers data directory
+.data/
+
+# Local neo4j config file
+dev.conf

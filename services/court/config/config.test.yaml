@@ -1,0 +1,11 @@
+logging:
+  log_level: "debug"
+psql:
+  max_open_connections: 10
+  max_idle_connections: 5
+  max_connection_lifetime: "1h"
+  max_connection_idle_time: "10m"
+s3:
+  bucket: "court-public"
+  download_link_ttl: "15m"
+  upload_link_ttl: "15m"

@@ -1,0 +1,15 @@
+logging:
+  log_level: "debug"
+psql:
+  max_open_connections: 10
+  max_idle_connections: 5
+  max_connection_lifetime: "1h"
+  max_connection_idle_time: "10m"
+neo4j:
+  request_timeout: "10s"
+  max_connection_pool_size: 10
+  max_connection_lifetime: "1h"
+s3:
+  bucket: "player-public"
+  download_link_ttl: "15m"
+  upload_link_ttl: "15m"
